@@ -24,8 +24,17 @@
           "image": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX10221695.jpg"
 
       }
-  ]
+  ],
+  "user": [
+    {
+        "id": "1",
+        "name": "John Doe",
+        "location": "USA",
+        "language": "React",
+        "image": "https://thumbs.dreamstime.com/z/cartoon-programmer-working-behind-computer-coder-to-sit-armchair-table-77862319.jpg"
 
+    }
+]
 
 
 }
