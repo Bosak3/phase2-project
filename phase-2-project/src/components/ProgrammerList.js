@@ -14,24 +14,17 @@ function ProgrammerList({arrayToMap}) {
                         <Profile 
                             key={eachMentor.id}
                             mentorObj={eachMentor}
-                        
                         />
                     )
-
-            })
-
+                }
+            )
         }
+                        
         
     </div>
     )
 }
 
 export default ProgrammerList
-
-// <Profile 
-//     name="Jon Doe"
-//     language="React"
-//     img="https://thumbs.dreamstime.com/z/cartoon-programmer-working-behind-computer-coder-to-sit-armchair-table-77862319.jpg"
-// /> 
 
 
