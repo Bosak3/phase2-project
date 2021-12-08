@@ -1,6 +1,6 @@
 import Profile from "./Profiles"
 
-function ProgrammerList({mentorArrayToMap}) {
+function ProgrammerList() {
 
     return(
     <div>    

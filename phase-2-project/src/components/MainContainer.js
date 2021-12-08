@@ -14,7 +14,7 @@ function MainContainer() {
         <div>
             <h1>MainContainer</h1>
             <PersonalProfile />
-            <ProgrammerList mentorArrayToMap= {mentorList}/>
+            <ProgrammerList />
             <Matches />
         </div>
     )
