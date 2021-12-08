@@ -1,9 +1,11 @@
 
-function Profiles({mentorObj}){
+function Profiles({mentorObj, clickFunction}){
 
     return(
         <div className="profile-card" >
-            <div onClick= {() => {console.log("CLICK")}}>
+            <div onClick= {() => {
+                clickFunction(mentorObj)
+            }}>
                 <img src={mentorObj.image} alt="programmer mentor"/>
                 <h2>{mentorObj.name}</h2>
                 <h2>{mentorObj.language}</h2>

@@ -1,8 +1,11 @@
+function Matches({mentorArrayToMap}){
 
-function Matches(){
-
-    return<h1>Matches</h1>
-
+    return(
+        <div>
+            <h2>Mathches</h2>
+        </div>
+    )
+    
 }
 
 export default Matches

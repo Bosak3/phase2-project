@@ -1,7 +1,11 @@
 import Profile from "./Profiles"
 
-function ProgrammerList({arrayToMap}) {
+
+function ProgrammerList({arrayToMap, addMentorMatches}) {
     
+    const addToMatches = (clickedMentor) => {
+        addMentorMatches(clickedMentor)
+    }
     
     return(
     <div>    
@@ -11,16 +15,14 @@ function ProgrammerList({arrayToMap}) {
                 
                 (eachMentor) => {
                     return(
+                        
                         <Profile 
                             key={eachMentor.id}
                             mentorObj={eachMentor}
+                            clickFunction ={addToMatches}
                         />
-                    )
-                }
-            )
-        }
-                        
-        
+                        )}
+        )}  
     </div>
     )
 }
