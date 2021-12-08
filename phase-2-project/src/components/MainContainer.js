@@ -1,20 +1,40 @@
 import PersonalProfile from "./PersonalProfile"
 import ProgrammerList from "./ProgrammerList"
 import Matches from "./Matches"
-import mentors from "../data"
 
+
+import {useEffect, useState} from "react"
 
 
 function MainContainer() {
+   
+    const [mentorListArray, setMentorList] = useState([])
+    console.log("MentorListArray:", mentorListArray)
+
+  
+
+    useEffect(
+        
+        () => {
+            fetch('http://localhost:3003/mentor')
+            .then(r=>r.json())
+            .then(
+                
+                (fetchedMentors)=> {
+
+
+                    setMentorList(fetchedMentors)
+
+            })
     
-    const mentorList = {mentors}
-    console.log(mentorList)
+        }
+    
+    ,[])
 
     return (
         <div>
-            <h1>MainContainer</h1>
             <PersonalProfile />
-            <ProgrammerList />
+            <ProgrammerList arrayToMap={mentorListArray} />
             <Matches />
         </div>
     )
