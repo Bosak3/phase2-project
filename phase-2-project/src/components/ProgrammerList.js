@@ -9,7 +9,7 @@ function ProgrammerList({arrayToMap, addToMatches, deleteRequest }) {
 
     }
     return(
-        <div>    
+        <div className="programmer-list">    
             <h1>ProgrammerList</h1>
             {
                 arrayToMap.map(

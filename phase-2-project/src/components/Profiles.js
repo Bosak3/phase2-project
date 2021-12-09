@@ -8,6 +8,7 @@ function Profiles({mentorObj, clickFunction, deleteRequest}){
                 <img src={mentorObj.image} alt="programmer mentor"/>
                 <h2>{mentorObj.name}</h2>
                 <h2>{mentorObj.language}</h2>
+                <h2>{mentorObj.location}</h2>
             </div>
             
             <button className= "button" 

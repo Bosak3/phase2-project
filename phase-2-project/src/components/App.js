@@ -1,10 +1,13 @@
 import MainContainer from "./MainContainer";
+import {BrowserRouter} from 'react-router-dom';
 
 
 function App() {
   return (
     <div>
-      <MainContainer/>
+      <BrowserRouter>
+        < MainContainer />
+      </BrowserRouter>
     </div>
   )
 }

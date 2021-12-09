@@ -1,10 +1,11 @@
 import PersonalProfile from "./PersonalProfile"
 import ProgrammerList from "./ProgrammerList"
 import Matches from "./Matches"
-
-
+import NavBar from "./NavBar"
 
 import {useEffect, useState} from "react"
+
+import {Route, Switch} from "react-router-dom"
 
 
 function MainContainer() {
@@ -110,20 +111,30 @@ function MainContainer() {
 
     return (
         <div>
-            <PersonalProfile />
+            <NavBar/>
+                <Switch>
 
-            <ProgrammerList 
-                arrayToMap={mentorListArray}// Working+++
-                addToMatches={addToMatches}
-                // deleteRequest={deleteFrontendBackend}// For Delete Fetch
-            />
+                    <Route exact path="/programmerlist">
+                        <ProgrammerList 
+                            arrayToMap={mentorListArray}// Working+++
+                            addToMatches={addToMatches}
+                            // deleteRequest={deleteFrontendBackend}// For Delete Fetch
+                        />
+                    </Route>
 
-            <Matches
-                arrayToMap={myMatchesArray}//Working++
-                removeFromMatchesFunction={removeFromMatches}
-                // deleteRequest={deleteFrontendBackend}// For Delete Fetch
+                    <Route exact path="/matches">
+                        <Matches
+                            arrayToMap={myMatchesArray}//Working++
+                            removeFromMatchesFunction={removeFromMatches}
+                            // deleteRequest={deleteFrontendBackend}// For Delete Fetch
+                        />
+                        
+                    </Route>
+                    <Route exact path="/">
+                        <PersonalProfile />
+                    </Route >
+                </Switch>
             
-            />
         </div>
     )
 }

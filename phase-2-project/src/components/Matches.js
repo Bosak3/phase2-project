@@ -7,7 +7,7 @@ function Matches({arrayToMap, removeFromMatchesFunction, /*deleteRequest*/}){
     }
 
     return(
-        <div>
+        <div className="matches">
             <h1>Matches</h1>
             {
                 arrayToMap.map(
