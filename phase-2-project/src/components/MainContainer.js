@@ -9,47 +9,119 @@ import {useEffect, useState} from "react"
 
 function MainContainer() {
    
-    const [mentorListArray, setMentorList] = useState([])
-    console.log("MentorListArray:", mentorListArray)
+    const [mentorListArray, setMentorList] = useState([])//Working++
+        // console.log("MentorListArray:", mentorListArray)
 
-    const[myMatchesArrary, setMatchesArray] =useState([])
-    console.log(myMatchesArrary)
-  
-    const addToMyMatches = (clickedMentor) => {
-        setMatchesArray([...myMatchesArrary, clickedMentor])
-    }
+    const[myMatchesArray, setMatchesArray] =useState([])//working++
+        console.log(myMatchesArray)
 
+    
+    const baseURL = "http://localhost:3000/mentor" 
 
-    useEffect(
+    
+    
+    useEffect( //Working++
         
         () => {
-            fetch('http://localhost:3003/mentor')
+            fetch(baseURL)
             .then(r=>r.json())
             .then(
                 
                 (fetchedMentors)=> {
+               setMentorList(fetchedMentors)
+            
+            })
+        },[])
+            
+            
+    
+    const addToMatches= (objToAdd) => {   //objToAdd - coming from click//Working++
+        // console.log('IN MAINC', objToAdd)
 
+        let checkForDup= myMatchesArray.find(
+            (eachMatchObj) => {
 
-                    setMentorList(fetchedMentors)
+                return ( eachMatchObj.id === objToAdd.id )
 
             })
+
+        if(checkForDup === undefined){
+        
+            setMatchesArray([...myMatchesArray, objToAdd])
+        }else{console.log("DUP")}
+
+    }
     
-        }
     
-    ,[])
+    
+    
+    const removeFromMatches= (objToRemove) => {    ///Working++
+        //filter for frontend
+        console.log('IN MAINC', objToRemove.id)
+
+        let newMatchesArray= myMatchesArray.filter(
+            (eachMatchObj) => {
+
+               return  objToRemove.id  !==  eachMatchObj.id 
+        })
+
+        setMatchesArray([...newMatchesArray])
+    
+    }
+    
+    
+    
+    
+    
+    // const deleteFrontendBackend= (idOfObjToRemove) => {  //Working++
+        
+        
+    //     let newMentorListArray= mentorListArray.filter(
+    //         (eachMentorObj) => {
+
+    //            return   eachMentorObj.id !==   idOfObjToRemove
+    //     })
+
+    //     setMentorList([...newMentorListArray])
+
+
+    //     let newMatchesArray= myMatchesArray.filter(
+    //         (eachMatchObj) => {
+
+    //            return  eachMatchObj.id !==   idOfObjToRemove
+    //     })
+    //     setMatchesArray([...newMatchesArray])
+
+    //     //backend delete request
+
+    //     fetch(`${baseURL}/${idOfObjToRemove}`,
+    //         {method: "DELETE"}
+    //     )
+
+    // }
+
+    
+
+
+
+
+
+
 
     return (
         <div>
             <PersonalProfile />
 
             <ProgrammerList 
-                arrayToMap={mentorListArray} 
-                addMentorMatches={addToMyMatches}
+                arrayToMap={mentorListArray}// Working+++
+                addToMatches={addToMatches}
+                // deleteRequest={deleteFrontendBackend}// For Delete Fetch
             />
 
             <Matches
-                mentorArrayToMap={mentorListArray}
-                addingMentorsToMatches={addToMyMatches}
+                arrayToMap={myMatchesArray}//Working++
+                removeFromMatchesFunction={removeFromMatches}
+                // deleteRequest={deleteFrontendBackend}// For Delete Fetch
             
             />
         </div>

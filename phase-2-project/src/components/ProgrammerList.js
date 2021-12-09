@@ -1,29 +1,34 @@
 import Profile from "./Profiles"
 
 
-function ProgrammerList({arrayToMap, addMentorMatches}) {
+function ProgrammerList({arrayToMap, addToMatches, deleteRequest }) {
     
-    const addToMatches = (clickedMentor) => {
-        addMentorMatches(clickedMentor)
+    
+    const forAddToMatches = ( objToAdd ) => {
+        addToMatches( objToAdd ) 
+
     }
-    
     return(
-    <div>    
-        <h1>ProgrammerList</h1>
-        {
-            arrayToMap.map(
-                
-                (eachMentor) => {
-                    return(
-                        
-                        <Profile 
-                            key={eachMentor.id}
-                            mentorObj={eachMentor}
-                            clickFunction ={addToMatches}
-                        />
-                        )}
-        )}  
-    </div>
+        <div>    
+            <h1>ProgrammerList</h1>
+            {
+                arrayToMap.map(
+                    
+                    (eachMentor) => {
+                        return(
+                            
+                            <Profile 
+                                key={eachMentor.id}
+                                mentorObj={eachMentor}
+                                clickFunction={forAddToMatches}
+                                // deleteRequest={deleteRequest}//For Delete Fetch
+                                
+                            />
+                        )
+                    })
+            }  
+        
+        </div>
     )
 }
 
