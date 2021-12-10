@@ -38,8 +38,8 @@ function PostForm({arrayToPOST}){
             .then(r => r.json())
             .then (console.log)
 
-        setNewProgrammerArray([...{arrayToPOST}, newProfileCard])
-        // setNewProgrammerArray([newProfileCard, ...{arrayToPOST}])
+        // setNewProgrammerArray([...{arrayToPOST}, newProfileCard])
+        setNewProgrammerArray([newProfileCard, ...{arrayToPOST}])
         setNewName('')
         setNewImage('')
         setNewLocation('')
@@ -51,7 +51,6 @@ function PostForm({arrayToPOST}){
         <label>Name:    </label>
         <input onChange={ (synthEvent) => {
             setNewName(synthEvent.target.value) 
-            console.log(synthEvent.target.value)
         }} 
         value={newName}
         type="text"
@@ -60,9 +59,7 @@ function PostForm({arrayToPOST}){
         <br></br>
         <label>Image URL:   </label>
         <input onChange={ (synthEvent) => {
-            setNewImage(synthEvent.target.value) 
-            console.log(synthEvent.target.value)
-            
+            setNewImage(synthEvent.target.value)
         }} 
         value={newImage}
         type="text"
@@ -72,7 +69,6 @@ function PostForm({arrayToPOST}){
         <label>Location:    </label>
         <input onChange={ (synthEvent) => {
             setNewLocation(synthEvent.target.value) 
-            console.log(synthEvent.target.value)
         }} 
         value={newLocation}
         type="text"
@@ -82,7 +78,6 @@ function PostForm({arrayToPOST}){
         <label>Programming Languages:   </label>
         <input onChange={ (synthEvent) => {
             setNewLanguage(synthEvent.target.value) 
-            console.log(synthEvent.target.value)
         }} 
         value={newLanguage}
         type="text"
@@ -92,7 +87,6 @@ function PostForm({arrayToPOST}){
         <label>Bio:    </label>
         <input onChange={ (synthEvent) => {
             setNewBio(synthEvent.target.value) 
-            console.log(synthEvent.target.value)
         }} 
         value={newBio}
         type="text"
