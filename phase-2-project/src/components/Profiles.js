@@ -18,7 +18,11 @@ function Profiles({mentorObj, clickFunction, deleteRequest}){
                 
             </button>
 
-            <button className="button" >Remove</button>
+            <button className="button" 
+            onClick={() => { 
+                deleteRequest( mentorObj.id ) 
+            }}
+            >Remove</button>
         
         </div>
         )
@@ -26,6 +30,3 @@ function Profiles({mentorObj, clickFunction, deleteRequest}){
     }
         
 export default Profiles
-
-//For Delete Fetch
-// onClick={() => { deleteRequest( mentorObj.id ) }}

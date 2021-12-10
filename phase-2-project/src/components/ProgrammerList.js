@@ -1,5 +1,6 @@
-import Profile from "./Profiles"
-
+import Profile from "./Profiles";
+import React from 'react';
+import PostForm from "./PostForm";
 
 function ProgrammerList({arrayToMap, addToMatches, deleteRequest }) {
     
@@ -8,8 +9,11 @@ function ProgrammerList({arrayToMap, addToMatches, deleteRequest }) {
         addToMatches( objToAdd ) 
 
     }
+    
     return(
         <div className="programmer-list">    
+        <PostForm 
+        arrayToPOST={arrayToMap} />
             <h1>ProgrammerList</h1>
             {
                 arrayToMap.map(
@@ -21,7 +25,7 @@ function ProgrammerList({arrayToMap, addToMatches, deleteRequest }) {
                                 key={eachMentor.id}
                                 mentorObj={eachMentor}
                                 clickFunction={forAddToMatches}
-                                // deleteRequest={deleteRequest}//For Delete Fetch
+                                deleteRequest={deleteRequest}//For Delete Fetch
                                 
                             />
                         )
@@ -32,6 +36,4 @@ function ProgrammerList({arrayToMap, addToMatches, deleteRequest }) {
     )
 }
 
-export default ProgrammerList
-
-
+export default ProgrammerList;

@@ -27,52 +27,43 @@
       "location": "Seattle, WA",
       "language": "React",
       "image": "https://cdn.pixabay.com/photo/2018/07/25/08/58/business-3560916_960_720.jpg"
-
-  },
-  {
+    },
+    {
       "id": "5",
       "name": "Shane Robinson",
       "location": "Brooklyn, NY",
       "language": "JavaScript",
       "image": "https://cdn.pixabay.com/photo/2016/11/29/09/38/adult-1868750_960_720.jpg"
-
-  },
-  {
-    "id": "6",
-    "name": "Ervin Hubbard",
-    "location": "Austin, TX",
-    "language": "Python",
-    "image": "https://cdn.pixabay.com/photo/2015/03/14/19/45/suit-673697_960_720.jpg"
-
-  },
-  {
+    },
+    {
+      "id": "6",
+      "name": "Ervin Hubbard",
+      "location": "Austin, TX",
+      "language": "Python",
+      "image": "https://cdn.pixabay.com/photo/2015/03/14/19/45/suit-673697_960_720.jpg"
+    },
+    {
       "id": "7",
       "name": "Kim Harris",
       "location": "Cave Spring, GA",
       "language": "Ruby",
       "image": "https://cdn.pixabay.com/photo/2016/11/19/15/49/woman-1839998_960_720.jpg"
-
-  },
-  {
+    },
+    {
       "id": "8",
       "name": "Jesse Watts",
       "location": "San Francisco, CA",
       "language": "JavaScript",
       "image": "https://cdn.pixabay.com/photo/2014/11/19/10/52/man-537136_960_720.jpg"
-
-  }
- 
-],
-
-"user": [
-  {
+    }
+  ],
+  "user": [
+    {
       "id": "1",
-      "name": "John Doe",
-      "location": "USA",
-      "language": "React",
-      "image": "https://icon2.cleanpng.com/20180516/vgq/kisspng-computer-icons-google-account-icon-design-login-5afc02da4d77a2.5100382215264652423173.jpg"
-
-  }
-      
-]
+      "name": "Nicholas Jeffers",
+      "location": "Raleigh, NC",
+      "language": "React, JavaScript",
+      "image": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg"
+    }
+  ]
 }

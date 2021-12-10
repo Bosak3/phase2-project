@@ -17,7 +17,7 @@ function MainContainer() {
         console.log(myMatchesArray)
 
     
-    const baseURL = "http://localhost:3000/mentor" 
+    const baseURL = "http://localhost:3004/mentor" 
 
     
     
@@ -74,32 +74,32 @@ function MainContainer() {
     
     
     
-    // const deleteFrontendBackend= (idOfObjToRemove) => {  //Working++
+    const deleteFrontendBackend= (idOfObjToRemove) => {  //Working++
         
         
-    //     let newMentorListArray= mentorListArray.filter(
-    //         (eachMentorObj) => {
+        let newMentorListArray= mentorListArray.filter(
+            (eachMentorObj) => {
 
-    //            return   eachMentorObj.id !==   idOfObjToRemove
-    //     })
+               return   eachMentorObj.id !==   idOfObjToRemove
+        })
 
-    //     setMentorList([...newMentorListArray])
+        setMentorList([...newMentorListArray])
 
 
-    //     let newMatchesArray= myMatchesArray.filter(
-    //         (eachMatchObj) => {
+        let newMatchesArray= myMatchesArray.filter(
+            (eachMatchObj) => {
 
-    //            return  eachMatchObj.id !==   idOfObjToRemove
-    //     })
-    //     setMatchesArray([...newMatchesArray])
+               return  eachMatchObj.id !==   idOfObjToRemove
+        })
+        setMatchesArray([...newMatchesArray])
 
-    //     //backend delete request
+        //backend delete request
 
-    //     fetch(`${baseURL}/${idOfObjToRemove}`,
-    //         {method: "DELETE"}
-    //     )
+        fetch(`${baseURL}/${idOfObjToRemove}`,
+            {method: "DELETE"}
+        )
 
-    // }
+    }
 
     
 
@@ -118,7 +118,7 @@ function MainContainer() {
                         <ProgrammerList 
                             arrayToMap={mentorListArray}// Working+++
                             addToMatches={addToMatches}
-                            // deleteRequest={deleteFrontendBackend}// For Delete Fetch
+                            deleteRequest={deleteFrontendBackend}// For Delete Fetch
                         />
                     </Route>
 
@@ -126,7 +126,7 @@ function MainContainer() {
                         <Matches
                             arrayToMap={myMatchesArray}//Working++
                             removeFromMatchesFunction={removeFromMatches}
-                            // deleteRequest={deleteFrontendBackend}// For Delete Fetch
+                            deleteRequest={deleteFrontendBackend}// For Delete Fetch
                         />
                         
                     </Route>
