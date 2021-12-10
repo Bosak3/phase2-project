@@ -10,21 +10,17 @@ import {Route, Switch} from "react-router-dom";
 
 function MainContainer() {
    
-    const [mentorListArray, setMenStorList] = useState([])//Working++
+    const [mentorListArray, setMentorList] = useState([])//Working++
         // console.log("MentorListArray:", mentorListArray)
 
     const[myMatchesArray, setMatchesArray] =useState([])//working++
         console.log(myMatchesArray)
 
     
-<<<<<<< HEAD
-    const baseURL = "http://localhost:3004/mentor" 
-=======
-    const baseURL = "http://localhost:3000/mentor" 
 
-    
->>>>>>> a859980c18bc18700e2893c92d70dfdcfeb3f71c
-    
+    const baseURL = "http://localhost:3004/mentor" 
+    // const baseURL = "http://localhost:3000/mentor" 
+   
     useEffect( //Working++
         
         () => {

@@ -85,7 +85,6 @@ html, body {
         outline: none;
     }
 
-<<<<<<< HEAD
     form {
         background-color: rgb(248, 230, 230);
         margin: auto;
@@ -284,7 +283,6 @@ html, body {
         width: 40px;
         height: 40px;
       }
-=======
 
     .personal-profile-card{
         float:inline-block;
@@ -309,6 +307,3 @@ html, body {
         margin:auto;
         
     }
-
->>>>>>> a859980c18bc18700e2893c92d70dfdcfeb3f71c
-  
