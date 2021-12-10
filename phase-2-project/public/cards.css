@@ -85,6 +85,7 @@ html, body {
         outline: none;
     }
 
+<<<<<<< HEAD
     form {
         background-color: rgb(248, 230, 230);
         margin: auto;
@@ -283,4 +284,31 @@ html, body {
         width: 40px;
         height: 40px;
       }
+=======
+
+    .personal-profile-card{
+        float:inline-block;
+        width: 350px;
+        height: auto;
+        padding: 5px;
+        margin: 0 auto;
+        margin-top: 20%;
+        border: 3px solid black;    
+        text-align: center;
+  
+        
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+
+      .personal-profile-card img{
+        width: 65%;
+        height: 250px;
+        padding: auto;
+        margin:auto;
+        
+    }
+
+>>>>>>> a859980c18bc18700e2893c92d70dfdcfeb3f71c
   

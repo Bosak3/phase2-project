@@ -8,6 +8,7 @@ function Matches({arrayToMap, removeFromMatchesFunction, deleteRequest}){
 
     return(
         <div className="matches">
+<<<<<<< HEAD
         <h1>Matches</h1>
     {
         arrayToMap.map(
@@ -22,6 +23,22 @@ function Matches({arrayToMap, removeFromMatchesFunction, deleteRequest}){
             )
         })
     }
+=======
+            <h1>Matches</h1>
+            {
+                arrayToMap.map(
+                    (matchObj) => {
+                        return(
+                            <Profiles 
+                                key={matchObj.id}
+                                mentorObj={matchObj}
+                                clickFunction={removeFromMatches} 
+                                deleteRequest={deleteRequest}//For Delete Fetch
+                            />
+                        )
+                })
+            }
+>>>>>>> a859980c18bc18700e2893c92d70dfdcfeb3f71c
         </div>
     )
     
