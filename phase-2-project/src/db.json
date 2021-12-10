@@ -2,65 +2,73 @@
   "mentor": [
     {
       "id": "1",
-      "name": "Sam B",
-      "location": "USA",
+      "name": "Sam",
+      "location": "Brooklyn, NY",
       "language": "React",
+      "bio": "I will never make you feel sad!",
       "image": "https://miro.medium.com/fit/c/288/288/1*77FS-Zxw0vg8dUbM5jH0xw.jpeg"
     },
     {
       "id": "2",
-      "name": "Bradford Williams",
-      "location": "Virginia Beach, VA",
+      "name": "Bradford",
+      "location": "Suffolk, VA",
       "language": "JavaScript",
-      "image": "https://cdn.pixabay.com/photo/2017/11/02/14/36/model-2911363_960_720.jpg"
+      "bio": "Bradford was a programmer who's ambitions to create a platform for local video work were tragically halted, when he wishd for a genie to help him with his tinder photo.",
+      "image": "https://cdn.pixabay.com/photo/2016/11/16/11/12/computer-1828603_960_720.jpg"
     },
     {
       "id": "3",
-      "name": "Luther Cunningham",
+      "name": "Luther",
       "location": "Spencer, TN",
       "language": "Fortan",
+      "bio": "For the love of God, someone please date me so I can stop bringing my Mom to costume parties.",
       "image": "https://cdn.pixabay.com/photo/2020/04/15/16/58/smile-5047506_960_720.jpg"
     },
     {
       "id": "4",
-      "name": "Miriam Ray",
+      "name": "Miriam",
       "location": "Seattle, WA",
       "language": "React",
+      "bio": "On our first date, I'll carve our names in a tree. It's the most romantic way to let you know I have knives.",
       "image": "https://cdn.pixabay.com/photo/2018/07/25/08/58/business-3560916_960_720.jpg"
     },
     {
       "id": "5",
-      "name": "Shane Robinson",
+      "name": "Shane",
       "location": "Brooklyn, NY",
       "language": "JavaScript",
+      "bio": "Last time I was someone's type I was donating blood.",
       "image": "https://cdn.pixabay.com/photo/2016/11/29/09/38/adult-1868750_960_720.jpg"
     },
     {
       "id": "6",
-      "name": "Ervin Hubbard",
+      "name": "Ervin",
       "location": "Austin, TX",
       "language": "Python",
-      "image": "https://cdn.pixabay.com/photo/2015/03/14/19/45/suit-673697_960_720.jpg"
+      "bio": "One day I was at the grocery store and this elderly lady was in front of me and the total bill for her groceries was $300 but her card declined. You already know what I did--God's gonna bless me one day. It was a lot of groceries, but I helped her put it all back.",
+      "image": "https://cdn.pixabay.com/photo/2017/05/19/12/38/entrepreneur-2326419_960_720.jpg"
     },
     {
       "id": "7",
-      "name": "Kim Harris",
+      "name": "Kim",
       "location": "Cave Spring, GA",
       "language": "Ruby",
+      "bio": "I hope you like bad girls because I'm literally bad at everything.",
       "image": "https://cdn.pixabay.com/photo/2016/11/19/15/49/woman-1839998_960_720.jpg"
     },
     {
       "id": "8",
-      "name": "Jesse Watts",
+      "name": "Jessie",
       "location": "San Francisco, CA",
       "language": "JavaScript",
-      "image": "https://cdn.pixabay.com/photo/2014/11/19/10/52/man-537136_960_720.jpg"
+      "bio": "Don't buy Colage whitening toothpaste. It says guaranteed whiteness in 14 days. It's been 2 weeks and I'm still Asian.",
+      "image": "https://cdn.pixabay.com/photo/2021/04/13/08/14/woman-6175010_960_720.jpg"
     }
   ],
   "user": [
     {
       "id": "1",
-      "name": "Nicholas Jeffers",
+      "name": "Nicholas",
       "location": "Raleigh, NC",
       "language": "React, JavaScript",
       "image": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg"

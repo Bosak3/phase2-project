@@ -1,11 +1,11 @@
-import PersonalProfile from "./PersonalProfile"
-import ProgrammerList from "./ProgrammerList"
-import Matches from "./Matches"
-import NavBar from "./NavBar"
+import PersonalProfile from "./PersonalProfile";
+import ProgrammerList from "./ProgrammerList";
+import Matches from "./Matches";
+import NavBar from "./NavBar";
 
-import {useEffect, useState} from "react"
+import {useEffect, useState} from "react";
 
-import {Route, Switch} from "react-router-dom"
+import {Route, Switch} from "react-router-dom";
 
 
 function MainContainer() {
@@ -18,8 +18,6 @@ function MainContainer() {
 
     
     const baseURL = "http://localhost:3004/mentor" 
-
-    
     
     useEffect( //Working++
         
@@ -139,4 +137,4 @@ function MainContainer() {
     )
 }
 
-export default MainContainer
+export default MainContainer;

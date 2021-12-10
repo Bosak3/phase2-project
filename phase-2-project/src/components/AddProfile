@@ -1,9 +1,0 @@
-import React from 'react';
-
-function AddProfile() {
-    return(
-
-    )
-}
-
-export default AddProfile;

@@ -1,6 +1,6 @@
-import Profiles from "./Profiles"
+import Profiles from "./Profiles";
 
-function Matches({arrayToMap, removeFromMatchesFunction, /*deleteRequest*/}){
+function Matches({arrayToMap, removeFromMatchesFunction, deleteRequest}){
 
     const removeFromMatches = ( mentorObj ) => {
         removeFromMatchesFunction( mentorObj )
@@ -8,23 +8,23 @@ function Matches({arrayToMap, removeFromMatchesFunction, /*deleteRequest*/}){
 
     return(
         <div className="matches">
-            <h1>Matches</h1>
-            {
-                arrayToMap.map(
-                    (matchObj) => {
-                        return(
-                            <Profiles 
-                                key={matchObj.id}
-                                mentorObj={matchObj}
-                                clickFunction={removeFromMatches} 
-                                // deleteRequest={deleteRequest}//For Delete Fetch
-                            />
-                        )
-                })
-            }
+        <h1>Matches</h1>
+    {
+        arrayToMap.map(
+            (matchObj) => {
+            return(
+                <Profiles 
+                    key={matchObj.id}
+                    mentorObj={matchObj}
+                    clickFunction={removeFromMatches} 
+                    deleteRequest={deleteRequest}//For Delete Fetch
+                />
+            )
+        })
+    }
         </div>
     )
     
 }
 
-export default Matches
+export default Matches;

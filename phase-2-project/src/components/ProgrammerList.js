@@ -9,12 +9,12 @@ function ProgrammerList({arrayToMap, addToMatches, deleteRequest }) {
         addToMatches( objToAdd ) 
 
     }
-    
+
     return(
         <div className="programmer-list">    
         <PostForm 
         arrayToPOST={arrayToMap} />
-            <h1>ProgrammerList</h1>
+            <h1>Meet Programmers In Your Area</h1>
             {
                 arrayToMap.map(
                     
