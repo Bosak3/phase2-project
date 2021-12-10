@@ -71,4 +71,29 @@ html, body {
         outline: none;
     }
 
+
+    .personal-profile-card{
+        float:inline-block;
+        width: 350px;
+        height: auto;
+        padding: 5px;
+        margin: 0 auto;
+        margin-top: 20%;
+        border: 3px solid black;    
+        text-align: center;
+  
+        
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+
+      .personal-profile-card img{
+        width: 65%;
+        height: 250px;
+        padding: auto;
+        margin:auto;
+        
+    }
+
   
